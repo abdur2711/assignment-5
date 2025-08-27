@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <nav class="min-h-[50px] flex flex-col md:flex-row justify-between items-start gap-3 p-4 container mx-auto" >
-            <div class="flex items-center gap-3">
+        <nav class="min-h-[50px] flex flex-col md:flex-row justify-between items-start gap-3 p-4 md:py-4 md:px-14 container mx-auto" >
+            <div class="flex items-center gap-2">
                 <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="">
-                <h2>Emergency Service</h2>
+                <h2 class="text-[#006747] font-bold text-xl leading-none">Emergency <br>Service</h2>
             </div>
             <div class="flex gap-3">
                 <div class="flex justify-center items-center gap-3 bg-[#41ff6a2e] py-3 px-5 rounded-3xl font-bold">
@@ -40,8 +40,8 @@
     </header>
     <main>
         <!-- service card-container section  -->
-        <section class=" container mx-auto bg-[#F5FFF6] mt-0">
-            <div class="cards  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 p-5 md:p-12">
+        <section class=" container mx-auto bg-[#F5FFF6] flex flex-col md:flex-row justify-center">
+            <div class="cards  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7 p-5 md:p-12 md:pr-7">
 
                 <!-- card 1 -->
                 <div class="card bg-white flex flex-col gap-6 p-8 rounded-xl shadow-md">
@@ -277,7 +277,36 @@
                     </div>
                 </div>
             </div>
-            <div class=""></div>
+
+            <!-- call history -->
+            <div class="p-5 md:p-12 md:pl-0 ">
+                <div class="bg-white h-[100%] p-6 rounded-xl">
+                    <div class="flex justify-between items-center">
+                        <div class="flex justify-center items-center gap-1.5 text-lg">
+                            <i class="fa-solid fa-clock-rotate-left text-[#5C5C5C]"></i>
+                            <h3>Call History</h3>
+                        </div>
+                        <button class="bg-[#00A63E] py-3 px-8 rounded-full text-white font-semibold">Clear</button>
+                    </div>
+                    <div class="mt-4">
+                        <div class="bg-[#FAFAFA] rounded-lg p-4 mb-2 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-lg font-semibold text-[#111111]">Fire Service Number</h3>
+                                <p class="text-lg font-normal text-[#5C5C5C]">999</p>
+                            </div>
+                            <p class="text-lg font-normal text-[#111111]">11:36:58</p>
+                        </div>
+
+                        <div class="bg-[#FAFAFA] rounded-lg p-4 mb-2 flex justify-between items-center">
+                            <div>
+                                <h3 class="text-lg font-semibold text-[#111111]">Fire Service Number</h3>
+                                <p class="text-lg font-normal text-[#5C5C5C]">999</p>
+                            </div>
+                            <p class="text-lg font-normal text-[#111111]">11:36:58</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
