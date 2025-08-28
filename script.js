@@ -8,6 +8,7 @@ function heartIncrements(id) {
 function heartCount(id){
     document.getElementById(id).addEventListener('click', function(){
         heartIncrements('heart-count');
+        document.getElementById(id).classList.add('text-red-500');
     });
 }
 
