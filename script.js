@@ -22,7 +22,7 @@ heartCount('heart-7');
 heartCount('heart-8');
 heartCount('heart-9');
 
-// copy button functionality
+// copyButton functionality
 const copyBtns = document.querySelectorAll('.copy-btn');
 
 for (let i = 0; i < copyBtns.length; i++) {
@@ -37,7 +37,7 @@ for (let i = 0; i < copyBtns.length; i++) {
     })
 }
 
-// reusable call button functionality using for loop
+// reusable callButton functionality using for loop
 const callData = [];
 const callButtons = document.querySelectorAll('.call-btn');
 
@@ -82,7 +82,7 @@ for (let i = 0; i < callButtons.length; i++) {
     })
 }
 
-// clear button functionality
+// clearButton functionality
 document.getElementById('clear-btn').addEventListener('click', function(e){
     callData.length = 0;
     const callHistory = document.getElementById('call-history-container');
