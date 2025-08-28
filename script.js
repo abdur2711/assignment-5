@@ -21,10 +21,25 @@ heartCount('heart-7');
 heartCount('heart-8');
 heartCount('heart-9');
 
+// copy button functionality
+const copyBtns = document.querySelectorAll('.copy-btn');
+
+for (let i = 0; i < copyBtns.length; i++) {
+    copyBtns[i].addEventListener('click', function(){
+        const serviceContact = document.querySelectorAll('.service-contact')[i].innerText;
+
+        navigator.clipboard.writeText(serviceContact);
+        alert(`Copied: ${serviceContact}`);
+
+        const copyCount = parseInt(document.getElementById('copy-count').innerText);
+        parseInt(document.getElementById('copy-count').innerText = copyCount + 1);
+    })
+}
+
+// reusable call button functionality using for loop
 const callData = [];
 const callButtons = document.querySelectorAll('.call-btn');
 
-// reusable call button functionality using for loop
 for (let i = 0; i < callButtons.length; i++) {
     callButtons[i].addEventListener('click', function (){
 
