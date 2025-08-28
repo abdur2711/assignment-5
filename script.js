@@ -21,10 +21,8 @@ heartCount('heart-7');
 heartCount('heart-8');
 heartCount('heart-9');
 
-
 const callData = [];
 const callButtons = document.querySelectorAll('.call-btn');
-const serviceTitle = document.querySelectorAll('.service-title');
 
 // reusable call button functionality using for loop
 for (let i = 0; i < callButtons.length; i++) {
@@ -67,7 +65,6 @@ for (let i = 0; i < callButtons.length; i++) {
         }
     })
 }
-
 
 // clear button functionality
 document.getElementById('clear-btn').addEventListener('click', function(e){
